@@ -16,8 +16,14 @@ set(action_files
   "action/Land.action"
 )
 
+set(service_files
+  "srv/ObtainJoystickAuthority.srv"
+  "srv/ReleaseJoystickAuthority.srv"
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
+  ${service_files}
   DEPENDENCIES action_msgs std_msgs
 )
 
