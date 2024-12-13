@@ -24,6 +24,7 @@ set(service_files
 set(action_files
   "action/TakeOff.action"
   "action/Land.action"
+  "action/MoveToPosition.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
