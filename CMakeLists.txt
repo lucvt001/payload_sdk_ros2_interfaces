@@ -13,6 +13,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(message_files
   "msg/JoystickCommand.msg"
+  "msg/VelocityCommand.msg"
 )
 
 set(service_files
