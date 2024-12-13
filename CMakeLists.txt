@@ -11,19 +11,25 @@ find_package(action_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-set(action_files
-  "action/TakeOff.action"
-  "action/Land.action"
+set(message_files
+  "msg/JoystickCommand.msg"
 )
 
 set(service_files
   "srv/ObtainJoystickAuthority.srv"
   "srv/ReleaseJoystickAuthority.srv"
+  "srv/SetJoystickMode.srv"
+)
+
+set(action_files
+  "action/TakeOff.action"
+  "action/Land.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  ${action_files}
+  ${message_files}
   ${service_files}
+  ${action_files}
   DEPENDENCIES action_msgs std_msgs
 )
 
