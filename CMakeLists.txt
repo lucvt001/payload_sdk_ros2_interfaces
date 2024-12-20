@@ -20,6 +20,7 @@ set(service_files
   "srv/ObtainJoystickAuthority.srv"
   "srv/ReleaseJoystickAuthority.srv"
   "srv/SetJoystickMode.srv"
+  "srv/EnableRecording.srv"
 )
 
 set(action_files
