@@ -21,6 +21,7 @@ set(service_files
   "srv/ReleaseJoystickAuthority.srv"
   "srv/SetJoystickMode.srv"
   "srv/EnableRecording.srv"
+  "srv/SetGimbalAngle.srv"
 )
 
 set(action_files
